@@ -121,6 +121,15 @@ form {
     cursor: pointer;
 }
 
+footer {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: gray;
+    font-weight: bold;
+}
+
 
 /*Responsive Desing*/
 
