@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Survey Form Project</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header">
+            <h1 id="title" class="center">Modern Beauty Salon</h1>
+            <p id="description" class="center">Due to covid-19 pandemic, we would like you to please make an appointment before coming to see us. And we will look forward to see you!</p>
+        </header>
+
+        <form id="survey-form" action="#">
+
+            <div class="form-group">
+                <label for="name" id="name-label">Name: </label>
+                <input type="text" name="name" id="name" placeholder="Please type in your name" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="your.email@email.com" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone-number" id="phone-number-label">Phone number: </label>
+                <input type="email" name="email" id="phone-number" placeholder="99999-9999" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Age <span class="clue">(optional)</span></label>
+                <input type="number" name="number" id="number" placeholder="Your Age" min="10" max="100" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <p>What is your gender?</p>
+                <label>
+                  <input
+                    name="gender"
+                    value="female"
+                    type="radio"
+                    class="input-radio"
+                    checked/>
+                    Female
+                </label>
+
+                <label>
+                  <input
+                    name="gender"
+                    value="male"
+                    type="radio"
+                    class="input-radio"/>
+                  Male
+                </label>
+
+                <label>
+                  <input
+                    name="gender"
+                    value="rather-not-say"
+                    type="radio"
+                    class="input-radio"/>
+                  Rather Not Say
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>What is your preferred shift?</p>
+                <select id="dropdown" name="shift" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="morning">Morning</option>
+                    <option value="evening">Evening</option>
+                    <option value="night">Night</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What is your favorite hairdresser?
+                </p>
+                <select id="favorite-hairdresser" name="favoriteHairdresser" class="form-control" required>
+                  <option disabled selected value>Select an option</option>
+                  <option value="loveAll">I love them all!</option>
+                  <option value="carlos">Carlos</option>
+                  <option value="maria">Maria</option>
+                  <option value="fatima">Fátima</option>
+                  <option value="julia">Júlia</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What you would like to do?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+
+                <label>
+                    <input
+                        name="prefer"
+                        value="front-end-projects"
+                        type="checkbox"
+                        class="input-checkbox"/>
+                        Hair Design Services (Cut, Blow-Out, Condicioning Treatment)
+                </label>
+
+                <label>
+                      <input
+                        name="prefer"
+                        value="back-end-projects"
+                        type="checkbox"
+                        class="input-checkbox"/>
+                        Color Services (Highlights, Lowlights, Corrective Color)
+                </label>
+
+                <label>
+                      <input
+                        name="prefer"
+                        value="data-visualization"
+                        type="checkbox"
+                        class="input-checkbox"/>
+                        Texturing Services (Perm, Relaxer, Japanese Straightening)
+                </label>
+
+                <label>
+                    <input
+                      name="prefer"
+                      value="data-visualization"
+                      type="checkbox"
+                      class="input-checkbox"/>
+                      Nail Services (Manicures, Pedicures, Acrylic Full Set, Gell Polish)
+                </label>
+
+                <label>
+                <input
+                  name="prefer"
+                  value="data-visualization"
+                  type="checkbox"
+                  class="input-checkbox"/>
+                  Waxing Services (Eyebrowns, Legs, Arms, Brazilian)
+                </label>
+
+                <label>
+                    <input
+                      name="prefer"
+                      value="data-visualization"
+                      type="checkbox"
+                      class="input-checkbox"/>
+                      Make-Up Services (For any occasion)
+                    </label>
+
+                <label>
+                <input
+                    name="prefer"
+                    value="data-visualization"
+                    type="checkbox"
+                    class="input-checkbox"/>
+                    I want it all! I'm a bride!
+                </label>
+
+            </div>
+
+            <div class="form-group">
+                <p>Would you like to make a comment or suggestion about how we could serve you better?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                      Submit
+                    </button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
